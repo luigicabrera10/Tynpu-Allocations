@@ -1,4 +1,4 @@
-@baseUrl = http://localhost:3000
+@baseUrl = https://tynpu-allocations.onrender.com
 
 ### Create a Consultant
 # @name createConsultant
@@ -6,8 +6,8 @@ POST {{baseUrl}}/consultants
 Content-Type: application/json
 
 {
-  "name": "Luigi dev",
-  "email": "luigi@tynpu.com"
+  "name": "Luigi dev 5",
+  "email": "luigi.second.dev@tynpu.com"
 }
 
 ### Create a Project
@@ -16,8 +16,8 @@ POST {{baseUrl}}/projects
 Content-Type: application/json
 
 {
-  "name": "Tynpu Mobile App",
-  "description": "A Clean Architecture Project"
+  "name": "Tynpu is Incredible",
+  "description": "Looking forward to working with you"
 }
 
 ### Create an Allocation (Success)
