@@ -1,0 +1,32 @@
+@baseUrl = http://localhost:3000
+
+### Create a Consultant
+# @name createConsultant
+POST {{baseUrl}}/consultants
+Content-Type: application/json
+
+{
+  "name": "Luigi dev",
+  "email": "luigi@tynpu.com"
+}
+
+### Create a Project
+# @name createProject
+POST {{baseUrl}}/projects
+Content-Type: application/json
+
+{
+  "name": "Tynpu Mobile App",
+  "description": "A Clean Architecture Project"
+}
+
+### Create an Allocation (Success)
+POST {{baseUrl}}/allocations
+Content-Type: application/json
+
+{
+  "consultantId": "07dea0ac-04a8-43d9-a7b0-1ec97be7cb95",
+  "projectId": "93c313e8-5771-4fe5-b915-32d62ce328fc",
+  "startTime": "2026-02-13T11:15:00Z",
+  "endTime": "2026-02-13T11:30:00Z"
+}
